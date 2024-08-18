@@ -76,6 +76,28 @@ class ProPage extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            margin: const EdgeInsets.only(right: 12, left: 12),
+            color: Colors.grey.shade200,
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Text(
+                  "200 Followers",
+                  style: TextStyle(fontSize: 20),
+                  textAlign: TextAlign.right,
+                ),
+                Text(
+                  "150 Following",
+                  style: TextStyle(fontSize: 20),
+                  textAlign: TextAlign.right,
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
@@ -97,9 +119,6 @@ class CustomAppBarClipper extends CustomClipper<Path> {
   @override
   bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
-
-
-
 
 /* class ProPage extends StatelessWidget {
   const ProPage({super.key});
