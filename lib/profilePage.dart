@@ -97,7 +97,35 @@ class ProPage extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Container(
+            /*  width: 30,
+            height: 30, */
+            margin: const EdgeInsets.only(right: 75, left: 75),
+            child: const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                ImageIcon(
+                  AssetImage("assets/images/web.png"),
+                  color: Colors.grey,
+                  size: 25,
+                ),
+                ImageIcon(
+                  AssetImage("assets/images/instagram-logo.png"),
+                  color: Colors.grey,
+                  size: 25,
+                ),
+                ImageIcon(
+                  AssetImage("assets/images/facebook.png"),
+                  color: Colors.grey,
+                  size: 25,
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

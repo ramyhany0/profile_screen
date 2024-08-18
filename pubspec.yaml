@@ -62,6 +62,9 @@ flutter:
   assets:
     - assets/images/wallpaper.jpg
     - assets/images/DSC_0926 (1).jpg
+    - assets/images/web.png
+    - assets/images/facebook.png
+    - assets/images/instagram-logo.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
