@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ProPage extends StatelessWidget {
-  const ProPage({super.key});
-
+  ProPage({super.key});
+  final String num = "200";
+  final String num1 = "200";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -85,14 +86,24 @@ class ProPage extends StatelessWidget {
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Text(
-                  "200 Followers",
-                  style: TextStyle(fontSize: 20),
+                Text.rich(
+                  TextSpan(
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                      text: "200",
+                      children: [TextSpan(text: " Follower")]),
                   textAlign: TextAlign.right,
                 ),
-                Text(
-                  "150 Following",
-                  style: TextStyle(fontSize: 20),
+                Text.rich(
+                  TextSpan(
+                      style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                      text: "150",
+                      children: [TextSpan(text: " Following")]),
                   textAlign: TextAlign.right,
                 ),
               ],
