@@ -137,6 +137,47 @@ class ProPage extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextButton(
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.grey.shade200,
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 8.0, horizontal: 16.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                ),
+                onPressed: () {},
+                child: const Text(
+                  '200 shots',
+                  style: TextStyle(
+                    color: Colors.purple,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 50), // Space between the two buttons
+              // Second button without background color
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  '10 Collections',
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Container(
+            width: 250,
+            height: 250,
+          )
         ],
       ),
     );
