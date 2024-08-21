@@ -183,6 +183,22 @@ class ProPage extends StatelessWidget {
               "assets/images/task.jpg",
             ),
           ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("Donate"),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("Message"),
+              ),
+            ],
+          )
         ],
       ),
     );
