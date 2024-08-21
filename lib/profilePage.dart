@@ -162,8 +162,7 @@ class ProPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(width: 60), // Space between the two buttons
-              // Second button without background color
+              const SizedBox(width: 60),
               TextButton(
                 onPressed: () {},
                 child: const Text(
@@ -183,19 +182,26 @@ class ProPage extends StatelessWidget {
               "assets/images/task.jpg",
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Row(
+            mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton(
                 onPressed: () {},
-                child: const Text("Donate"),
+                child: const Text(
+                  "Donate",
+                  style: TextStyle(fontSize: 20.0),
+                ),
               ),
               ElevatedButton(
                 onPressed: () {},
-                child: const Text("Message"),
+                child: const Text(
+                  "Message",
+                  style: TextStyle(fontSize: 20.0),
+                ),
               ),
             ],
           )
