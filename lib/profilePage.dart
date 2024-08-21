@@ -191,11 +191,11 @@ class ProPage extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {},
-                child: Text("Donate"),
+                child: const Text("Donate"),
               ),
               ElevatedButton(
                 onPressed: () {},
-                child: Text("Message"),
+                child: const Text("Message"),
               ),
             ],
           )
