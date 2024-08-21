@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class ProPage extends StatelessWidget {
   ProPage({super.key});
+
   final String num = "200";
   final String num1 = "200";
   @override
@@ -12,7 +13,7 @@ class ProPage extends StatelessWidget {
           ClipPath(
             clipper: CustomAppBarClipper(),
             child: Container(
-              height: 200.0,
+              height: 135.0,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/wallpaper.jpg'),
@@ -62,11 +63,11 @@ class ProPage extends StatelessWidget {
             children: [
               Center(
                 child: CircleAvatar(
-                  radius: 45.0,
+                  radius: 60.0,
                   backgroundImage: AssetImage('assets/images/DSC_0926 (1).jpg'),
                 ),
               ),
-              SizedBox(height: 10.0),
+              SizedBox(height: 20.0),
               Text(
                 "Ramy Hany",
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
@@ -78,7 +79,7 @@ class ProPage extends StatelessWidget {
             ],
           ),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
           Container(
             margin: const EdgeInsets.only(right: 12, left: 12),
@@ -91,7 +92,7 @@ class ProPage extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.black,
-                          fontWeight: FontWeight.bold),
+                          fontWeight: FontWeight.normal),
                       text: "200",
                       children: [TextSpan(text: " Follower")]),
                   textAlign: TextAlign.right,
@@ -101,7 +102,7 @@ class ProPage extends StatelessWidget {
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.black,
-                          fontWeight: FontWeight.bold),
+                          fontWeight: FontWeight.normal),
                       text: "150",
                       children: [TextSpan(text: " Following")]),
                   textAlign: TextAlign.right,
@@ -161,7 +162,7 @@ class ProPage extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(width: 50), // Space between the two buttons
+              const SizedBox(width: 60), // Space between the two buttons
               // Second button without background color
               TextButton(
                 onPressed: () {},
@@ -174,10 +175,14 @@ class ProPage extends StatelessWidget {
               ),
             ],
           ),
+          const SizedBox(
+            height: 20,
+          ),
           Container(
-            width: 250,
-            height: 250,
-          )
+            child: Image.asset(
+              "assets/images/task.jpg",
+            ),
+          ),
         ],
       ),
     );
