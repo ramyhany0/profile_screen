@@ -185,25 +185,48 @@ class ProPage extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          Row(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text(
-                  "Donate",
-                  style: TextStyle(fontSize: 20.0),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Expanded(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 14.0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      side: const BorderSide(color: Colors.purple),
+                    ),
+                    onPressed: () {},
+                    child: const Text(
+                      "Donate",
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 142, 33, 243)),
+                    ),
+                  ),
                 ),
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text(
-                  "Message",
-                  style: TextStyle(fontSize: 20.0),
+                const SizedBox(width: 16.0),
+                Expanded(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(vertical: 14.0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30.0),
+                      ),
+                      side: const BorderSide(color: Colors.purple),
+                    ),
+                    onPressed: () {},
+                    child: const Text(
+                      "Message",
+                      style:
+                          TextStyle(color: Color.fromARGB(255, 142, 33, 243)),
+                    ),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           )
         ],
       ),
